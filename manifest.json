@@ -1,0 +1,33 @@
+{
+  "manifest_version": "0.3",
+  "name": "plaiiin-tradingsuite",
+  "display_name": "Plaiiin TradingSuite",
+  "version": "1.0.0",
+  "description": "Design, backtest, and improve trading strategies from Claude — drives your local Plaiiin Forge app.",
+  "long_description": "Plaiiin TradingSuite connects Claude to your locally running Plaiiin Forge app over its unix socket, exposing tools to list/create/update/validate strategies, run backtests, read AI-friendly summaries and trades, manage phases/levels/hoops, evaluate DSL conditions, and fetch candles/indicators. Ask Claude to analyze why a strategy loses and improve it end-to-end. Requires the Plaiiin app to be installed and running.",
+  "author": {
+    "name": "Plaiiin"
+  },
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/server/index.js"],
+      "env": {
+        "PLAIIIN_RUN_DIR": "${user_config.run_dir}"
+      }
+    }
+  },
+  "user_config": {
+    "run_dir": {
+      "type": "directory",
+      "title": "Plaiiin run directory",
+      "description": "Folder where the running Plaiiin app exposes forge.sock (the shared App-Group run dir). Leave the default unless you run a custom dev setup.",
+      "default": "${HOME}/Library/Group Containers/LA8GX8Y3R9.group.plaiiin/run",
+      "required": false
+    }
+  },
+  "keywords": ["trading", "backtest", "finance", "strategy", "crypto", "quant"],
+  "license": "Proprietary"
+}
