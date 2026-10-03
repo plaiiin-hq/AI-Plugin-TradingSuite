@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "plaiiin-tradingsuite": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["./codex-server.mjs"],
+      "cwd": "./server",
+      "env": {
+        "PLAIIIN_RUN_DIR": "${HOME}/Library/Group Containers/LA8GX8Y3R9.group.plaiiin/run"
+      }
+    }
+  }
+}

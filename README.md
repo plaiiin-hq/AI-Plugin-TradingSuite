@@ -16,6 +16,21 @@ it reads the strategy + backtest results, edits the DSL, re-runs backtests, and 
 
 Signed with **Developer ID Application: plaiiin GmbH**.
 
+## Codex
+
+This repository is also a portable Codex plugin. Add it as a marketplace, then install
+`plaiiin-tradingsuite` from that source:
+
+```
+codex plugin marketplace add plaiiin-hq/plaiiin-tradingsuite-plugin
+codex plugin add plaiiin-tradingsuite@plaiiin-tradingsuite
+```
+
+The Codex package includes a bundled MCP server, so it does not run `npm install` when users
+install the plugin. It needs Node.js on `PATH` and the Plaiiin app running. The server uses the
+standard App-Group run directory; set `PLAIIIN_RUN_DIR` in the MCP configuration for a custom
+development setup.
+
 ## What it does
 
 - **Strategies** — list / get / create / update / validate / delete, run backtests, read
