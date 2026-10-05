@@ -7,8 +7,8 @@
     "name": "plaiiin GmbH",
     "url": "https://plaiiin.com"
   },
-  "homepage": "https://github.com/plaiiin-hq/plaiiin-tradingsuite-plugin",
-  "repository": "https://github.com/plaiiin-hq/plaiiin-tradingsuite-plugin",
+  "homepage": "https://github.com/plaiiin-hq/AI-Plugin-TradingSuite",
+  "repository": "https://github.com/plaiiin-hq/AI-Plugin-TradingSuite",
   "license": "Proprietary",
   "keywords": ["trading", "backtesting", "strategies", "finance", "crypto"]
 }

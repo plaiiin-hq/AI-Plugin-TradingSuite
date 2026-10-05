@@ -22,7 +22,7 @@ This repository is also a portable Codex plugin. Add it as a marketplace, then i
 `plaiiin-tradingsuite` from that source:
 
 ```
-codex plugin marketplace add plaiiin-hq/plaiiin-tradingsuite-plugin
+codex plugin marketplace add plaiiin-hq/AI-Plugin-TradingSuite
 codex plugin add plaiiin-tradingsuite@plaiiin-tradingsuite
 ```
 
